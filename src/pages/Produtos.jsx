@@ -1,99 +1,79 @@
-import {
-  FaTachometerAlt,
-  FaGasPump,
-  FaCog,
-  FaArrowRight
-} from "react-icons/fa";
+import { BsArrowRightShort, BsFuelPump, BsGear  } from "react-icons/bs";
+
+import carro1 from '../assets/carro1.jpg'
+import carro2 from '../assets/carro2.webp'
+import carro3 from '../assets/carro3.jpg'
+import carro4 from '../assets/carro4.avif'
+import carro5 from '../assets/carro5.jfif'
+import carro6 from '../assets/carro6.jpg'
+import carro7 from '../assets/carro7.avif'
+import carro8 from '../assets/carro8.avif'
 
 function Produtos() {
   const veiculos = [
     {
       brand: "BMW",
-      name: "2024 BMW M4 Competition",
-      price: "$119,900",
-      image:
-        "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80",
-      mileage: "1,200 mi",
-      transmission: "Automatic",
-      fuel: "Gasoline",
-      tag: "NEW"
+      name: "BMW M4 Competition",
+      price: "R$900.000",
+      image: carro1,   
+      transmission: "Automático",
+      fuel: "Gasolina",
     },
     {
       brand: "PORSCHE",
-      name: "2024 Porsche 911 Turbo S",
-      price: "$224,900",
-      image:
-        "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80",
-      mileage: "2,100 mi",
-      transmission: "Automatic",
-      fuel: "Gasoline",
-      tag: "FEATURED"
+      name: "Porsche 911 Turbo S",
+      price: "R$2,1 mi",
+      image:carro2,
+      transmission: "Automático",
+      fuel: "Gasolina",
     },
     {
       brand: "MERCEDES-BENZ",
-      name: "2024 AMG GT 63 S",
-      price: "$184,500",
-      image:
-        "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=80",
-      mileage: "890 mi",
-      transmission: "Automatic",
-      fuel: "Gasoline",
-      tag: "NEW"
+      name: "AMG GT 63 S",
+      price: "R$2 mi",
+      image:carro3,
+      transmission: "Automático",
+      fuel: "Gasolina",
     },
     {
       brand: "AUDI",
-      name: "2024 RS7 Sportback",
-      price: "$131,900",
-      image:
-        "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=800&q=80",
-      mileage: "3,600 mi",
-      transmission: "Automatic",
-      fuel: "Hybrid",
-      tag: "FEATURED"
+      name: "RS7 Sportback",
+      price: "R$340.000",
+      image:carro4,
+      transmission: "Automático",
+      fuel: "Híbrido",
     },
     {
       brand: "LAMBORGHINI",
-      name: "2023 Urus Performante",
-      price: "$267,000",
-      image:
-        "https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=800&q=80",
-      mileage: "530 mi",
-      transmission: "Automatic",
-      fuel: "Gasoline",
-      tag: "NEW"
+      name: "Urus Performante",
+      price: "R$4,3 mi",
+      image: carro5,
+      transmission: "Automático",
+      fuel: "Gasolina",
     },
     {
       brand: "FERRARI",
-      name: "2022 F8 Tributo",
-      price: "$329,000",
-      image:
-        "https://images.unsplash.com/photo-1592198084033-aade902d1aae?auto=format&fit=crop&w=800&q=80",
-      mileage: "3,900 mi",
-      transmission: "Automatic",
-      fuel: "Gasoline",
-      tag: "FEATURED"
+      name: "F8 Tributo",
+      price: "R$3,2 mi",
+      image:carro6,
+      transmission: "Automático",
+      fuel: "Gasolina",
     },
     {
       brand: "TESLA",
-      name: "2024 Model S Plaid",
-      price: "$109,990",
-      image:
-        "https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=800&q=80",
-      mileage: "2,100 mi",
-      transmission: "Automatic",
-      fuel: "Electric",
-      tag: "NEW"
+      name: "Model S Plaid",
+      price: "R$540.000",
+      image:carro7,
+      transmission: "Automático",
+      fuel: "Elétrico",
     },
     {
       brand: "ROLLS-ROYCE",
-      name: "2024 Ghost Extended",
-      price: "$418,000",
-      image:
-        "https://images.unsplash.com/photo-1631295868223-63265b40d9b4?auto=format&fit=crop&w=800&q=80",
-      mileage: "300 mi",
-      transmission: "Automatic",
-      fuel: "Gasoline",
-      tag: "NEW"
+      name: "Ghost Extended",
+      price: "R$4 mi",
+      image:carro8,
+      transmission: "Automático",
+      fuel: "Gasolina",
     }
   ];
 
@@ -111,62 +91,41 @@ function Produtos() {
           {veiculos.map((vehicle, index) => (
             <div
               key={index}
-              className="bg-[#111111] border border-[#292929] overflow-hidden
-              hover:border-red-600 transition duration-300 group"
+              className="bg-[#111111] border border-[#292929]
+              hover:border-red-600 transition duration-300"
             >
 
-              {/* Imagem */}
               <div className="relative h-48 overflow-hidden">
 
                 <img
                   src={vehicle.image}
                   alt={vehicle.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                  className="w-full h-full object-cover"
                 />
 
-                {/* Tag */}
-                <span
-                  className={`absolute top-2 left-2 px-3 py-1 text-[10px] font-bold
-                  ${
-                    vehicle.tag === "NEW"
-                      ? "bg-red-600 text-white"
-                      : "bg-white text-black"
-                  }`}
-                >
-                  {vehicle.tag}
-                </span>
               </div>
 
-              {/* Informações */}
               <div className="p-3">
 
-                <p className="text-[9px] text-red-500 font-bold tracking-wider mb-1">
+                <p className="text-xs text-red-600 font-bold mb-1">
                   {vehicle.brand}
                 </p>
 
-                <h2 className="text-sm font-bold text-white mb-3">
+                <h2 className="text-base font-bold text-white mb-3">
                   {vehicle.name}
                 </h2>
 
-                {/* Características */}
-                <div className="grid grid-cols-3 bg-[#191919] mb-4">
+                <div className="grid grid-cols-2 bg-[#191919] mb-4">
 
-                  <div className="flex flex-col items-center py-3 border-r border-[#292929]">
-                    <FaTachometerAlt className="text-gray-500 text-xs mb-1" />
-                    <span className="text-[9px] text-gray-400">
-                      {vehicle.mileage}
-                    </span>
-                  </div>
-
-                  <div className="flex flex-col items-center py-3 border-r border-[#292929]">
-                    <FaCog className="text-gray-500 text-xs mb-1" />
+                  <div className="flex flex-col items-center py-3">
+                    <BsGear className="text-gray-400 text-xs mb-1" />
                     <span className="text-[9px] text-gray-400">
                       {vehicle.transmission}
                     </span>
                   </div>
 
                   <div className="flex flex-col items-center py-3">
-                    <FaGasPump className="text-gray-500 text-xs mb-1" />
+                    <BsFuelPump  className="text-gray-400 text-xs mb-1" />
                     <span className="text-[9px] text-gray-400">
                       {vehicle.fuel}
                     </span>
@@ -174,27 +133,23 @@ function Produtos() {
 
                 </div>
 
-                {/* Preço e botão */}
                 <div className="flex items-end justify-between">
 
                   <div>
-                    <p className="text-[9px] text-gray-500 uppercase">
-                      Price
+                    <p className="text-[9px] text-gray-300">
+                      PREÇO
                     </p>
 
-                    <p className="text-base font-bold text-red-500">
+                    <p className="text-base font-bold text-red-600">
                       {vehicle.price}
                     </p>
                   </div>
 
                   <button
-                    className="flex items-center gap-2 border border-[#333]
-                    px-3 py-2 text-[9px] font-bold uppercase
-                    hover:bg-red-600 hover:border-red-600
-                    transition duration-300"
+                    className="flex items-center gap-2 px-3 py-2 text-[9px] font-bold hover:bg-red-600 transition duration-300"
                   >
-                    Details
-                    <FaArrowRight />
+                    DETALHES
+                    <BsArrowRightShort />
                   </button>
 
                 </div>

@@ -9,10 +9,9 @@ import {
 } from "react-icons/fi";
 
 function App() {
-  return (
-    <div className="bg-black text-white">
 
-      {/* HERO */}
+  return (
+    <div className="min-h-screen bg-black text-white">
       <section
         id="home"
         className="relative flex min-h-screen items-center bg-cover bg-center pt-14"
@@ -80,7 +79,6 @@ function App() {
         </div>
       </section>
 
-      {/* VEÍCULOS */}
       <section id="vehicles" className="px-5 py-20">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs font-bold tracking-widest text-red-600">
@@ -189,7 +187,6 @@ function App() {
         </div>
       </section>
 
-      {/* DESTAQUES */}
       <section id="about" className="bg-neutral-900 px-5 py-20">
         <div className="mx-auto max-w-6xl text-center">
           <p className="text-xs font-bold tracking-widest text-red-600">
@@ -252,7 +249,6 @@ Consultores dedicados disponíveis todos os dias.              </p>
         </div>
       </section>
 
-      {/* FILOSOFIA */}
       <section className="grid bg-black lg:grid-cols-2">
         <div
           className="min-h-96 bg-cover bg-center"
@@ -286,18 +282,14 @@ Consultores dedicados disponíveis todos os dias.              </p>
         </div>
       </section>
 
-      {/* BANNER */}
       <section className="bg-red-600 px-5 py-7">
         <div className="mx-auto flex max-w-5xl items-center justify-between gap-5">
           <div className="flex items-center gap-4">
             <FiBatteryCharging size={30} />
 
             <div>
-              <p className="text-xs font-bold">JÁ DISPONÍVEIS
-</p>
-              <h3 className="text-sm font-black sm:text-base">
-VEÍCULOS DE LUXO ELÉTRICOS E HÍBRIDOS
-              </h3>
+              <p className="text-xs font-bold">JÁ DISPONÍVEIS</p>
+              <h3 className="text-sm font-black sm:text-base">VEÍCULOS DE LUXO ELÉTRICOS E HÍBRIDOS</h3>
             </div>
           </div>
 
@@ -310,7 +302,6 @@ VEÍCULOS DE LUXO ELÉTRICOS E HÍBRIDOS
         </div>
       </section>
 
-      {/* CTA */}
       <section id="contact" className="px-5 py-24 text-center">
         <p className="text-xs font-bold tracking-widest text-red-600">
           COMECE A SUA JORNADA
