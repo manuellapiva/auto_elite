@@ -1,9 +1,5 @@
-import {
-  FaTachometerAlt,
-  FaGasPump,
-  FaCog,
-  FaArrowRight
-} from "react-icons/fa";
+import { BsArrowRightShort, BsFuelPump, BsGear  } from "react-icons/bs";
+
 import carro1 from '../assets/carro1.jpg'
 import carro2 from '../assets/carro2.webp'
 import carro3 from '../assets/carro3.jpg'
@@ -104,32 +100,32 @@ function Produtos() {
                 <img
                   src={vehicle.image}
                   alt={vehicle.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                  className="w-full h-full object-cover"
                 />
 
               </div>
 
               <div className="p-3">
 
-                <p className="text-[9px] text-red-500 font-bold tracking-wider mb-1">
+                <p className="text-xs text-red-600 font-bold mb-1">
                   {vehicle.brand}
                 </p>
 
-                <h2 className="text-sm font-bold text-white mb-3">
+                <h2 className="text-base font-bold text-white mb-3">
                   {vehicle.name}
                 </h2>
 
-                <div className="grid grid-cols-3 bg-[#191919] mb-4">
+                <div className="grid grid-cols-2 bg-[#191919] mb-4">
 
-                  <div className="flex flex-col items-center py-3 border-r border-[#292929]">
-                    <FaCog className="text-gray-500 text-xs mb-1" />
+                  <div className="flex flex-col items-center py-3">
+                    <BsGear className="text-gray-400 text-xs mb-1" />
                     <span className="text-[9px] text-gray-400">
                       {vehicle.transmission}
                     </span>
                   </div>
 
                   <div className="flex flex-col items-center py-3">
-                    <FaGasPump className="text-gray-500 text-xs mb-1" />
+                    <BsFuelPump  className="text-gray-400 text-xs mb-1" />
                     <span className="text-[9px] text-gray-400">
                       {vehicle.fuel}
                     </span>
@@ -140,23 +136,20 @@ function Produtos() {
                 <div className="flex items-end justify-between">
 
                   <div>
-                    <p className="text-[9px] text-gray-500 uppercase">
-                      Price
+                    <p className="text-[9px] text-gray-300">
+                      PREÇO
                     </p>
 
-                    <p className="text-base font-bold text-red-500">
+                    <p className="text-base font-bold text-red-600">
                       {vehicle.price}
                     </p>
                   </div>
 
                   <button
-                    className="flex items-center gap-2 border border-[#333]
-                    px-3 py-2 text-[9px] font-bold uppercase
-                    hover:bg-red-600 hover:border-red-600
-                    transition duration-300"
+                    className="flex items-center gap-2 px-3 py-2 text-[9px] font-bold hover:bg-red-600 transition duration-300"
                   >
-                    Details
-                    <FaArrowRight />
+                    DETALHES
+                    <BsArrowRightShort />
                   </button>
 
                 </div>
