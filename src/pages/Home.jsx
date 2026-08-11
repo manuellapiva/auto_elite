@@ -283,7 +283,7 @@ function App() {
             <div>
               <p className="text-xs font-bold">NOW AVAILABLE</p>
               <h3 className="font-black">
-                ELECTRIC & HYBRID LUXURY VEHICLES
+                Elétrico & Híbrido LUXURY VEHICLES
               </h3>
             </div>
           </div>
