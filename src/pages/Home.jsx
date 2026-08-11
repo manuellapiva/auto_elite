@@ -1,6 +1,5 @@
-import { useState } from "react";
 import {
-  FiMenu, FiX, FiArrowRight, FiShield, FiAward,
+  FiArrowRight, FiShield, FiAward,
   FiTrendingUp, FiHeadphones, FiFileText, FiBatteryCharging
 } from "react-icons/fi";
 
@@ -25,64 +24,9 @@ const features = [
 ];
 
 function App() {
-  const [menu, setMenu] = useState(false);
 
   return (
     <div className="min-h-screen bg-black text-white">
-
-      {/* HEADER */}
-      <header className="fixed top-0 z-50 w-full border-b border-neutral-800 bg-black">
-        <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-5">
-
-          <a href="#home" className="font-black tracking-widest">
-            <span className="bg-red-600 px-1">AE</span> AUTO
-            <span className="text-red-600"> ELITE</span>
-          </a>
-
-          <nav className="hidden gap-6 md:flex">
-            {["HOME", "ABOUT", "VEHICLES", "CONTACT", "FAQ"].map((item, i) => (
-              <a
-                key={item}
-                href={"#" + item.toLowerCase()}
-                className={`text-xs font-bold hover:text-red-600 ${
-                  i === 0 ? "text-red-600" : "text-neutral-500"
-                }`}
-              >
-                {item}
-              </a>
-            ))}
-          </nav>
-
-          <a
-            href="#vehicles"
-            className="hidden bg-red-600 px-4 py-2 text-xs font-bold hover:bg-red-700 sm:block"
-          >
-            BROWSE CARS <FiArrowRight className="inline" />
-          </a>
-
-          <button onClick={() => setMenu(!menu)} className="md:hidden">
-            {menu ? <FiX /> : <FiMenu />}
-          </button>
-        </div>
-
-        {menu && (
-          <nav className="flex flex-col gap-5 border-t border-neutral-800 bg-black p-5 md:hidden">
-            {["HOME", "ABOUT", "VEHICLES", "CONTACT", "FAQ"].map(item => (
-              <a
-                key={item}
-                href={"#" + item.toLowerCase()}
-                onClick={() => setMenu(false)}
-                className="text-xs font-bold"
-              >
-                {item}
-              </a>
-            ))}
-          </nav>
-        )}
-      </header>
-
-
-      {/* HERO */}
       <section
         id="home"
         className="relative flex min-h-screen items-center bg-cover bg-center pt-14"
@@ -144,8 +88,6 @@ function App() {
         </div>
       </section>
 
-
-      {/* VEÍCULOS */}
       <section id="vehicles" className="px-5 py-20">
         <div className="mx-auto max-w-6xl">
 
@@ -196,8 +138,6 @@ function App() {
         </div>
       </section>
 
-
-      {/* DESTAQUES */}
       <section id="about" className="bg-neutral-900 px-5 py-20">
         <div className="mx-auto max-w-6xl text-center">
 
@@ -236,8 +176,6 @@ function App() {
         </div>
       </section>
 
-
-      {/* HISTÓRIA */}
       <section className="grid bg-black lg:grid-cols-2">
 
         <div
@@ -273,8 +211,6 @@ function App() {
 
       </section>
 
-
-      {/* BANNER */}
       <section className="bg-red-600 px-5 py-7">
         <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-5 md:flex-row">
 
@@ -298,8 +234,6 @@ function App() {
         </div>
       </section>
 
-
-      {/* CTA */}
       <section id="contact" className="px-5 py-24 text-center">
         <p className="text-xs font-bold tracking-widest text-red-600">
           BEGIN YOUR JOURNEY
@@ -322,8 +256,6 @@ function App() {
         </a>
       </section>
 
-
-      {/* FOOTER */}
       <footer id="faq" className="border-t border-neutral-800 bg-neutral-900 px-5 py-10">
 
         <div className="mx-auto grid max-w-6xl gap-8 sm:grid-cols-2 lg:grid-cols-4">
