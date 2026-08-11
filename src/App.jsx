@@ -1,12 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
+import Footer from './components/Footer'
 import Home from "./pages/Home";
-import Sobre from "./pages/Sobre";
 import Produtos from "./pages/Produtos";
-import Contato from "./pages/Contato";
 import Faq from "./pages/Faq";
 import Error from "./pages/Error";
+import Contato from './pages/Contato'
+import Sobre from './pages/Sobre'
 
 function App() {
   return (
@@ -17,9 +18,9 @@ function App() {
 
         <Route path="/" element={<Home />} />
 
-        <Route path="/sobre" element={<Sobre />} />
-
         <Route path="/produtos" element={<Produtos />} />
+
+        <Route path="/sobre" element={<Sobre />} />
 
         <Route path="/contato" element={<Contato />} />
 
@@ -28,6 +29,8 @@ function App() {
         <Route path="*" element={<Error />} />
 
       </Routes>
+
+      <Footer/>
     </>
   );
 }
