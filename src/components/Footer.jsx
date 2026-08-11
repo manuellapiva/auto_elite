@@ -33,15 +33,15 @@ export default function Footer(){
             <h3 className="text-xs font-bold text-red-600">NAVEGAÇÃO</h3>
 
             <div className="mt-4 flex flex-col gap-3 text-xs text-neutral-500">
-              <a href="#home">Home</a>
-              <a href="#about">Sobre</a>
-              <a href="#vehicles">Veículos</a>
-              <a href="#contact">Contato</a>
+              <a href="/">Home</a>
+              <a href="/sobre">Sobre</a>
+              <a href="/produtos">Veículos</a>
+              <a href="/contato">Contato</a>
             </div>
           </div>
 
           <div>
-            <h3 className="text-xs font-bold text-red-600">SERViços</h3>
+            <h3 className="text-xs font-bold text-red-600">SERVIÇOS</h3>
 
             <div className="mt-4 flex flex-col gap-3 text-xs text-neutral-500">
               <span>Veículos Novos</span>
@@ -52,7 +52,7 @@ export default function Footer(){
           </div>
 
           <div>
-            <h3 className="text-xs font-bold text-red-600">CONTACT</h3>
+            <h3 className="text-xs font-bold text-red-600">CONTATO</h3>
 
             <div className="mt-4 space-y-3 text-xs text-neutral-500">
               <p>67 Barra Funda, São Paulo</p>

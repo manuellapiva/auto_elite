@@ -294,7 +294,7 @@ Consultores dedicados disponíveis todos os dias.              </p>
           </div>
 
           <a
-            href="#vehicles"
+            href="/produtos"
             className="hidden bg-white px-5 py-3 text-xs font-bold text-red-600 sm:block"
           >
             EXPLORE A LINHA DE VEÍCULOS ELÉTRICOS
