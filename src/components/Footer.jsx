@@ -119,7 +119,7 @@ export default function Footer() {
             CONTATO
           </h3>
           <div className="mt-4 space-y-3 text-xs text-neutral-500">
-            <p>67 Barra Funda, São Paulo</p>
+            <p>Avenida das Palmeiras, 1250, Vinhedo, SP</p>
             <a
               href="tel:+19005551234"
               className="block transition hover:text-white"

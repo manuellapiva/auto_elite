@@ -74,13 +74,6 @@ export default function Header() {
         </div>
 
         <div className="hidden items-center gap-5 lg:flex">
-          <button
-            type="button"
-            aria-label="Alterar tema"
-            className="text-gray-500 transition-colors duration-300 hover:text-white"
-          >
-            <FiSun size={17} />
-          </button>
           <NavLink
             to="/produtos"
             className="group flex items-center gap-2 bg-red-600 px-5 py-2.5 text-[10px] font-black uppercase tracking-[0.12em] text-white transition-all duration-300 hover:bg-red-700"
@@ -137,14 +130,6 @@ export default function Header() {
           </div>
 
           <div className="mt-6 flex items-center justify-between">
-            <button
-              type="button"
-              aria-label="Alterar tema"
-              className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.12em] text-gray-400 transition-colors duration-300 hover:text-white"
-            >
-              <FiSun size={16} />
-              Tema
-            </button>
 
             <NavLink
               to="/produtos"
