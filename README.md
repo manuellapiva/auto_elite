@@ -139,15 +139,6 @@ Para fazer deploy:
 - 📦 Code splitting via React Router para carregamento inicial mais rápido
 - 🖼️ Formatos de imagem otimizados (AVIF, JFIF)
 
-## Melhorias Futuras
-
-- [ ] Filtragem e busca de produtos
-- [ ] Funcionalidade de carrinho de compras
-- [ ] Autenticação de usuário
-- [ ] Integração de pagamento
-- [ ] Dashboard administrativo
-- [ ] Pipeline de otimização de imagens
-
 ## Licença
 
 Este projeto é privado e confidencial.
