@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { FiPlus, FiMinus, FiArrowRight, FiMessageCircle } from "react-icons/fi";
 
+import { Link } from "react-router-dom";
+
 const categories = [ "Estoque", "Financiamento", "Processo", "Pós-venda" ];
 
 const questions = [
@@ -132,12 +134,13 @@ export default function Faq() {
                 Nossa equipe está disponível para responder suas dúvidas e
                 ajudar você a encontrar o veículo ideal.
               </p>
-              <button
+              <Link
+              to="/contato"
                 className="mt-5 inline-flex items-center gap-3 bg-white px-5 py-3 text-xs font-bold uppercase tracking-[0.15em] text-red-600 transition-all duration-300 hover:bg-black hover:text-white"
               >
                 Entre em contato
                 <FiArrowRight />
-              </button>
+              </Link>
             </div>
           </aside>
           <div>

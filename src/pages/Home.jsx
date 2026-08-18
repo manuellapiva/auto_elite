@@ -8,6 +8,8 @@ import {
   FiBatteryCharging,
 } from "react-icons/fi";
 
+import { Link } from "react-router-dom";
+
 function App() {
 
   return (
@@ -39,19 +41,19 @@ function App() {
             </p>
 
             <div className="mt-6 flex gap-3">
-              <a
-                href="/produtos"
+              <Link
+                to="/produtos"
                 className="bg-red-600 px-5 py-3 text-xs font-bold hover:bg-red-700"
               >
                 EXPLORE O INVENTÁRIO <FiArrowRight className="inline" />
-              </a>
+              </Link>
 
-              <a
-                href="/sobre"
+              <Link
+                to="/sobre"
                 className="border border-neutral-500 px-5 py-3 text-xs font-bold hover:border-red-600"
               >
                 NOSSA HISTÓRIA
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -273,12 +275,12 @@ Consultores dedicados disponíveis todos os dias.              </p>
             guiada pela expertise, pela confiança e pelo compromisso.
           </p>
 
-          <a
-            href="/sobre"
+          <Link
+            to="/sobre"
             className="mt-6 inline-block bg-red-600 px-5 py-3 text-xs font-bold hover:bg-red-700"
           >
             NOSSA HISTÓRIA <FiArrowRight className="inline" />
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -293,12 +295,12 @@ Consultores dedicados disponíveis todos os dias.              </p>
             </div>
           </div>
 
-          <a
-            href="/produtos"
+          <Link
+            to="/produtos"
             className="hidden bg-white px-5 py-3 text-xs font-bold text-red-600 sm:block"
           >
             EXPLORE A LINHA DE VEÍCULOS ELÉTRICOS
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -317,16 +319,13 @@ Consultores dedicados disponíveis todos os dias.              </p>
 Agende uma consultoria exclusiva com nossos especialistas.
         </p>
 
-        <a
-          href="/contato"
+        <Link
+          to="/contato"
           className="mt-7 inline-block bg-red-600 px-5 py-3 text-xs font-bold hover:bg-red-700"
         >
-       AGENDE UMA CONSULTORIA
-
-        </a>
+          AGENDE UMA CONSULTORIA
+        </Link>
       </section>
-
-
     </div>
   );
 }
